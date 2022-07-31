@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 3rem 5rem;
+    background-color: #636c79;
+    color: #fff;
+}
+button{
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    height: 45px;
+}
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+.nav-list-item{
+    font-family: 'Open Sans';
+    font-size: 1rem;
+    margin: 0 1.5rem;
+    cursor: pointer;
+}
+.nav-list-item:last-child{
+    margin: 0 0 0 1.5rem;
+}
+.nav-list-item>button{
+    margin-left: 2rem;
+    padding: 0.5rem 2.5rem;
+    color: white;
+    font-size:1rem;
+    background:none;
+    font-weight: 500;
+    border: 1px solid rgb(187, 185, 185);
+    cursor: pointer;
+}
+
+.inner-header{
+    display: flex;
+    width: 100%;
+    padding: 4rem 3rem;
+    align-items: center;
+}
+.inner-header>img{
+    width: 30rem;
+    height: 32rem;
+    border-radius: 5px;
+}
+.inner-header .right-section{
+    padding: 4rem 0 4rem 8rem ;
+}
+.inner-header .right-section>.title{
+    font-size: 3.8rem;
+    font-weight: 700;
+    font-family: "Merriweather";
+}
+.inner-header .right-section>.desc{
+    margin: 1.5rem 0;
+    width: 85%;
+    font-family: 'Open Sans';
+    line-height: 2;
+    font-size: 1.1rem;
+    color: rgb(202, 200, 200);
+}
+
+.email-section{
+    padding: 0.5rem 0.5rem 0.5rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.email-logo{
+    width: 20px;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+.email{
+    padding: 0.5rem;
+    border: none;
+    font-family: "Open Sans";
+    font-size: 1rem;
+}
+.email-section .lets-talk{
+    padding: 1rem 2.5rem;
+    background-color: #8bb7a2;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* ------ Number of projects Section -------  */
+.num-of-projects{
+    padding: 8rem 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.num-of-projects .title{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 60%;
+    text-align: center;
+}
+.num-of-projects>div{
+    display: flex;
+    justify-content: space-between;
+}
+.numbers{
+    font-family: "Open Sans";
+    padding: 2rem;
+    margin: 0 4rem;
+}
+.numbers .number{
+    font-size: 2.5rem;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+.numbers .desc{
+    color:rgb(110, 109, 109);
+    font-weight: 600;
+}
+.num-of-projects img{
+    width: 100%;
+    height: 40rem;
+}
+
+
+/* -------- Our Features Section -------  */
+.our-features{
+    padding: 8rem 9rem;
+}
+.our-features>h1{
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    width: 100%;
+    text-align: center;
+}
+
+.feature{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.feature img{
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+    object-position: right;
+}
+.feature-content{
+    padding-right: 5rem;
+}
+.feature-content h1{
+    font-size: 2.4rem;
+    font-family: "Open Sans";
+}
+.feature-content p{
+    font-size: 1.1rem;
+    color: #4e4d4d;
+    font-family: "Open Sans";
+    line-height: 2;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.feature-content .lets-talk{
+    padding: 1rem 3rem;
+    background-color: #8bb7a2;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-left: auto;
+    margin-right: 0;
+}
+.middle-content{
+    padding-right: 0;
+    padding-left: 6rem;
+    margin-right: 0;
+    margin-left: auto;
+}
+.middle img{
+    width:80rem;
+    height: 35rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+/* ------- Our Team -------  */
+.our-team{
+    padding:4rem 9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading{
+    display: flex;
+    padding: 0 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+.heading h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: "Open Sans";
+    line-height: 1.5;
+}
+.heading p{
+    width: 50%;
+    font-size: 1.2rem;
+    color: #807f7f;
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+.team-members{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.team-member{
+    width: 21rem;
+}
+.team-member>img{
+    width: 100%;
+    height: 28rem;
+    object-fit: cover;
+    object-position: center;
+}
+.team-member .name{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: "Poppins";
+    margin: 1.5rem 0;
+}
+.team-member .desc{
+    font-size: 1rem;
+    font-weight: 500;
+    color: grey;
+    font-family: "Open Sans";
+}
+.our-team>button{
+    padding: 1rem 2.5rem;
+    background-color: #8bb7a2;
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 3rem;
+}
+
+/* -------- Footer Section ---------  */
+footer{
+    background-color: #10181d;
+    color: #fff;
+    padding: 0 9rem;
+}
+.logo-and-social{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #6b6a6a
+}
+.footer-logo{
+    width: 120px;
+    height: 40px;
+}
+.social-icon{
+    padding: 1rem;
+    background-color: #282f34;
+    border-radius: 1.6rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.footer-lists{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-lists li{
+    font-size: 0.9rem;
+    color: rgb(163, 162, 162);
+    font-family: "Open Sans";
+    list-style-type: none;
+    margin: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer-lists .list-head{
+    font-size: 1.1rem;
+    color: #fff;
+    cursor: default;
+}

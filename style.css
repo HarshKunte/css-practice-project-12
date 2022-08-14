@@ -18,6 +18,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+.hamburger{
+    display: none;
+}
 .logo{
     width: 120px;
     height: 45px;
@@ -314,4 +317,211 @@ footer{
     font-size: 1.1rem;
     color: #fff;
     cursor: default;
+}
+
+@media screen and (max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    header,.num-of-projects, .our-features, .our-team, footer{
+        padding: 3rem 3rem;
+    }
+    .nav-list{
+        display: none;
+    }
+    .inner-header{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+    .inner-header .right-section {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature{
+        flex-wrap: wrap;
+    }
+    .num-of-projects>div {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-header>img {
+        width: auto;
+        height: 22rem;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+    }
+    .inner-header .right-section>.title {
+        font-size: 3.4rem;
+        font-weight: 700;
+        font-family: "Merriweather";
+    }
+    .num-of-projects .title {
+        font-size: 2.5rem;
+        width: 80%;
+    }
+    .num-of-projects img {
+        width: 100%;
+        height: auto;
+    }
+    .feature {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-content{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .feature-content .lets-talk{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .num-of-projects img {
+        width: 35rem;
+        height: 20rem;
+    }
+    .feature img {
+        height: 20rem;
+        width: 35rem;
+        object-fit: cover;
+        object-position: right;
+    }
+    .our-features>h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        font-family: "Poppins";
+        width: 100%;
+        text-align: center;
+    }
+    .feature-content h1 {
+        font-size: 2rem;
+        margin-top: 2rem;
+        width: 90%;
+    }
+    .feature-content p {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .feature img{
+        object-position: auto;
+    }
+    .middle img{
+        object-position:top;
+        order: 3;
+    }
+    .feature-content p {
+        width: 90%;
+    }
+    .heading h2 {
+        font-size: 2.1rem;
+
+    }
+    .heading p {
+        font-size: 1rem;
+    }
+    .team-member>img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width:450px){
+    header,.num-of-projects, .our-features, .our-team, footer{
+        padding: 1.5rem;
+    }
+    .inner-header>img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        margin-bottom: 1.5rem;
+    }
+    .num-of-projects img {
+        width: 100%;
+
+    }
+    .feature img {
+        width: 100%;
+    }
+    .footer-lists{
+        flex-wrap: wrap;
+    }
+    .inner-header .right-section>.title {
+        font-size: 2.2rem;
+        width: 95%;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .inner-header .right-section>.desc {
+        margin: 1rem 0;
+        width: 85%;
+        font-size: 0.9rem;
+
+    }
+    .email-section .lets-talk {
+        padding: 0.5rem 2rem;       
+    }
+    .email-section{
+        width: 100%;
+    }
+    .num-of-projects .title {
+        font-size: 2rem;
+        width: 95%;
+    }
+    .numbers {
+        font-family: "Open Sans";
+        padding: 1rem;
+        margin: 0;
+    }
+    .our-features>h1 {
+        font-size: 2.2rem;
+
+    }
+    .feature-content h1 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        width: 90%;
+    }
+    .heading {
+        display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       text-align: center;
+       padding: 0.5rem;
+    }
+    .heading p{
+        width: 100%;
+    }
+    .social-icon{
+        padding: 0.5rem;
+    }
+    .logo-and-social{
+        padding: 1.5rem 0;
+    }
+}
+@media screen and (max-width:380px){
+    .email-section .lets-talk {
+        padding: 0.5rem 1.3rem;
+        background-color: #8bb7a2;
+        color: #fff;
+        font-family: "Open Sans";
+        font-size: 0.8rem;
+        font-weight: 600;
+        border: none;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .email-section{
+        padding-left: 1rem;
+    }
+    .numbers .number {
+        font-size: 2rem;
+    }
 }
